@@ -1,0 +1,27 @@
+.svetofor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: black 5px solid;
+    height: 200px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 25px;
+    background: lightsteelblue;
+}
+.svetofor > div{
+    border: black 5px solid;
+    border-radius: 25px;
+    width: 30px;
+    height: 30px;
+}
+.red{
+    background: red;
+}
+.yellow{
+    background: yellow;
+}
+.green{
+    background: green;
+}

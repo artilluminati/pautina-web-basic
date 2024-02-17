@@ -1,0 +1,39 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 70px;
+}
+img{
+    max-width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.card{
+    margin-top: 40px;
+    padding: 15px 17px;
+    width: 310px;
+    border: 1px solid #CECCCC;
+    border-radius: 10px;
+}
+.card > *{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.card p{
+    color: #232323;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.price{
+    font-weight: 600;
+    font-size: 2rem;
+}
+.card button{
+    background-color: #315AC4;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding-block: 8px;
+    border: none;
+    border-radius: 10px;
+}

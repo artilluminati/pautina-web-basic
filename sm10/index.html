@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Светофор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="svetofor">
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="green"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            setInterval(()=>{
+                setTimeout(()=>{
+                    document.querySelector('.red').style.background = 'red';
+                    document.querySelector('.yellow').style.background = 'yellow';
+                    document.querySelector('.green').style.background = 'green';
+                }, 0);
+                setTimeout(()=>{
+                    document.querySelector('.red').style.background = 'red';
+                    document.querySelector('.yellow').style.background = 'none';
+                    document.querySelector('.green').style.background = 'none';
+                }, 1000);
+
+                setTimeout(()=>{
+                    document.querySelector('.red').style.background = 'none';
+                    document.querySelector('.yellow').style.background = 'yellow';
+                    document.querySelector('.green').style.background = 'none';
+                }, 2000);
+
+                setTimeout(()=>{
+                    document.querySelector('.red').style.background = 'none';
+                    document.querySelector('.yellow').style.background = 'none';
+                    document.querySelector('.green').style.background = 'green';
+                }, 3000);
+                setTimeout(()=>{
+                    document.querySelector('.red').style.background = 'red';
+                    document.querySelector('.yellow').style.background = 'yellow';
+                    document.querySelector('.green').style.background = 'green';
+                }, 4000);
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
