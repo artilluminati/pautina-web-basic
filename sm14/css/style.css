@@ -21,9 +21,6 @@ a{
 .show-more{
     font-size: 1.25rem;
 }
-
-
-
 .search-field{
     max-width: 250px;
     width: 100%;
@@ -45,6 +42,7 @@ a{
     color: #333333;
     font-size: 1rem;
     font-weight: 500;
+    outline: none;
 }
 
 .text-center{
@@ -137,6 +135,10 @@ main{
 .card-title{
     display: flex;
     flex-direction: column;
+    font-size: 1.25rem;
+}
+.card-price{
+    color: #333333B2;
 }
 .card-badges{
     display: flex;
