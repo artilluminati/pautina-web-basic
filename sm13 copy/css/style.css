@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.text-center{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header, main, footer{
+    padding: 0 40px;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 60px;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    margin-top: 75px;
+    margin-bottom: 40px;
+}
+
+header .menu{
+    display: flex;
+    max-width: 550px;
+    gap: 30px;
+    justify-content: space-between;
+}
+header .menu-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+.header-banner{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(535px, 1fr));
+    gap: 30px;
+}
+
+.header-banner div:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+}
+
+main{
+    padding-block: 30px 100px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 30px;
+    margin-block: 60px;
+}
+.card{
+    border: 1px solid #333333;
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.card img{
+    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+}
+.card-title{
+    display: flex;
+    flex-direction: column;
+}
+.card-badges{
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+}
+.card-badges div{
+    display: flex;
+}
+.card-badge{
+    width: 40px;
+}
+.card-btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 130px 0;
+}
+footer .container > *{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+    header nav{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+        gap: auto;
+        row-gap: 20px;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    .menu-buttons{
+        justify-content: flex-end;
+    }
+}
